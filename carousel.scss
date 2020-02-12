@@ -86,7 +86,8 @@ img {
 }
 
 @media only screen and (min-width: 1024px) {
-  .slider, .slider-wrapper {
+  .slider,
+  .slider-wrapper {
     height: 480px;
   }
 
@@ -97,9 +98,12 @@ img {
 }
 
 @media only screen and (max-width: 1023px) and (min-width: 768px) {
-  .slider, .slider-wrapper {
+  .slider,
+  .slider-wrapper {
     height: 360px;
   }
 
   .slide-caption {
     width: 75%;
+  }
+}

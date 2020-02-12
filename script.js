@@ -10,26 +10,21 @@ $(document).ready(function() {
 
   $("#lightSlider").lightSlider({
     item: 4,
-    loop: false,
+    loop: true,
     slideMove: 1,
     easing: "cubic-bezier(0.25, 0, 0.25, 1)",
     speed: 600,
-    responsive: [
-      {
-        breakpoint: 800,
-        settings: {
-          item: 3,
-          slideMove: 1,
-          slideMargin: 6
-        }
-      },
-      {
-        breakpoint: 480,
-        settings: {
-          item: 2,
-          slideMove: 1
-        }
-      }
-    ]
+    slideMargin: 25,
+    autoWidth: true
+  });
+
+  $("ul.d-tabs li").click(function() {
+    var tab_id = $(this).attr("data-tab");
+
+    $("ul.d-tabs li").removeClass("current");
+    $(".tab-content").removeClass("current");
+
+    $(this).addClass("current");
+    $("#" + tab_id).addClass("current");
   });
 });

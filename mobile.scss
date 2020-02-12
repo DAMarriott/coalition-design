@@ -1,0 +1,67 @@
+@media screen and (max-width: 767px) {
+  .sticky-header header {
+    height: 60px;
+  }
+
+  .header-logo img {
+    margin-top: -100px;
+    margin-left: 40px;
+  }
+  .sticky-header header .header-logo {
+    transform: scale(0);
+  }
+
+  .desktop-tabs {
+    display: none;
+  }
+
+  .section-title {
+    margin-top: 25px;
+    margin-left: -11px;
+  }
+
+  .section-text {
+    margin-top: -50px;
+  }
+
+  .history-container {
+    display: block;
+    padding: 10%;
+  }
+
+  .section-two-head {
+    display: block;
+    height: auto;
+    padding: 10%;
+
+    .section-text {
+      background-color: inherit;
+      color: rgb(65, 79, 107);
+    }
+  }
+
+  .lSSlideOuter {
+    height: 100%;
+    width: 50%;
+  }
+
+  input {
+    position: absolute;
+    opacity: 0;
+  }
+
+  nav img {
+    display: none;
+  }
+
+  .img-wrapper {
+    width: 1200px;
+  }
+
+  .img-wrapper img {
+    left: -200px;
+    position: relative;
+  }
+}
+
+/*# sourceMappingURL=mobile.css.map */

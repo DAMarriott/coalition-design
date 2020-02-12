@@ -3,85 +3,72 @@
     margin-top: 0;
     padding-top: 0;
   }
-
   /*////HEADER////*/
   header {
     height: 100vh;
     position: relative;
     background-attachment: fixed;
     background-size: cover;
+
+    nav {
+      position: fixed;
+      bottom: inherit;
+      width: 100%;
+      background: rgba(255, 0, 0, 0);
+
+      img {
+        height: 350%;
+        margin-top: -75px;
+        margin-left: -75px;
+      }
+
+      a {
+        color: white;
+        margin-right: 35px;
+      }
+    }
   }
 
   .sticky-header {
-    padding-top: 61px;
+    nav {
+      background-color: white;
+      top: 0;
+    }
+
+    a {
+      color: rgb(65, 79, 107);
+    }
   }
 
-  .sticky-header nav {
-    background-color: white;
-    top: 0;
-  }
-
-  .sticky-header a {
-    color: rgb(65, 79, 107);
-  }
   .header-logo {
-    transition: all 0.3s ease;
     display: none;
-  }
-
-  nav {
-    position: fixed;
-    bottom: inherit;
-    width: 100%;
-    background: rgba(255, 0, 0, 0);
-    z-index: 100;
-  }
-
-  header nav a {
-    color: white;
-    margin-right: 35px;
-  }
-
-  nav img {
-    height: 350%;
-    margin-top: -75px;
-    margin-left: -75px;
   }
 
   /*////Section 1////*/
 
   .history-container {
-    display: flex;
-    font-family: "adobe", Oswald, sans-serif;
-    color: rgb(65, 79, 107);
     padding-top: 5%;
     padding-left: 18%;
     padding-right: 18%;
+  }
+
+  .section-num {
+    font-size: 136px;
   }
 
   .section-text {
     color: rgb(65, 79, 107);
     background-color: inherit;
     width: 100%;
-    margin-top: auto;
     opacity: inherit;
-    padding: 1%;
-    border-radius: 2%;
     clear: right;
     margin-top: 120px;
     margin-left: -170px;
   }
 
   .carousel {
-    background: url("/imgs/Bg (1).png");
     height: 200px;
-    bottom: 0;
-    width: 100%;
     position: absolute;
-  }
-
-  .section-num {
-    font-size: 136px;
   }
 
   .section-two-head .section-text {
@@ -92,7 +79,6 @@
   .section-one {
     height: 72vh;
     position: relative;
-    background-size: cover;
   }
 
   .section-two-head {
@@ -100,22 +86,17 @@
     padding-left: 2%;
     height: 150px;
     text-align: inherit;
-  }
 
-  .section-two-head * {
-    margin-top: auto;
-    margin-bottom: auto;
+    * {
+      margin-top: auto;
+      margin-bottom: auto;
+    }
   }
 
   /*///////FOOTER////////*/
   footer {
-    position: relative;
     margin-top: 0px;
     height: 75px;
-  }
-
-  footer div {
-    width: 50%;
   }
 
   /*///////SECTION TABS/////////*/
